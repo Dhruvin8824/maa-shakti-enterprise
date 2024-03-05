@@ -1,2 +1,2 @@
 # maa-shakti-enterprise
-maa-shakti-enterprise-wewbsite
+maa-shakti-enterprise-website
