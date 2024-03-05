@@ -221,7 +221,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
                             document.getElementById("card-add").innerHTML += `
                         
-                        <div class="product-card swiper-slide" style="width: 30%; margin-bottom: 5%;">
+                        <div class="product-card swiper-slide" id="search-fix-content" style="width: 30%; margin-bottom: 5%;">
                             <div class="product-card-top"
                                 style="background-image: url('assets/img/products/products/${filterArray[index].image}'); background-size: unset; background-repeat: unset;">
                                 <div class="add-section"><a
