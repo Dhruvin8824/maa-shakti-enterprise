@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="assets/js/search.js"></script>
+
+  <link href="assets/lightbox/lightbox.css" rel="stylesheet" />
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Maa Shakti Enterprise | We produce for your health</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="assets/js/config.js"></script>
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet" id="style-default">
+  <link href="assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
+  <link href="assets/css/user.css" rel="stylesheet" id="user-style-default">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <div class="bg-white">
+      <div class="content">
+
+        <nav class="navbar navbar-expand-lg py-1" id="navbar-top"
+          data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
+          <div class="container"><a class="navbar-brand me-lg-auto cursor-pointer" href="index.html"><img
+                class="w-50 w-md-100 img-fluid" src="assets/img/logos/logo.png" alt="Maa Shakti Enterprise" /></a>
+            <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+              data-navbar-collapse="data-navbar-collapse">
+              <div class="container d-lg-flex justify-content-lg-end pe-lg-0 w-lg-100">
+
+                <form class="form-inline position-relative w-lg-50 ms-lg-4 ms-xl-9 mt-3 mt-lg-0 " onsubmit="return false;">
+                  <input class="search fs-8 bg-transparent form-control" style="cursor: pointer !important;" type="text"
+                    id="searchInput" placeholder="search catalog.." />
+                  <div class="search-icon"> <span class="uil uil-search"></span></div>
+                </form>
+
+                <ul class="navbar-nav mt-2 mt-lg-1 ms-lg-4 ms-xl-8 ms-2xl-9 gap-lg-x1"
+                  data-navbar-nav="data-navbar-nav">
+                  <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="index.html" title="home">Home</a>
+                  </li>
+                  <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="about-us.html"
+                      title="about">AboutUs</a></li>
+                  <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#products"
+                      title="catalog">Catalog</a></li>
+                  <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="index.html#review"
+                      title="reviews">Reviews</a>
+                  </li>
+                  <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#support"
+                      title="support">ContactUs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container" data-bs-target="#navbar-top" data-bs-spy="scroll" tabindex="0">
+
+          <section class="mb-9 mb-lg-10 mb-xxl-11 text-center text-md-start" id="products">
+            <h3 class="mb-x1 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold pt-6">Our Products </h3>
+
+
+            <h3 id="para" style="display: none;"
+              class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7"> <span
+                class="fw-bold">No Search </span>Results Found!</h3>
+
+            <div class="mb-6 mb-lg-7 " id="slider-search" style="display: none;">
+              <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7"> <span
+                  class="fw-bold">Search </span>Results</h1>
+              <div style="display: flex; column-gap: 4%; flex-wrap: wrap;" id="card-add">
+
+              </div>
+            </div>
+
+
+            <div id="static-content-display">
+              <div class="mb-6 mb-lg-7 " id="slider-1">
+                <!-- <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7"> <span
+                  class="fw-bold">New </span>Arrivals</h1> -->
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider"
+                      data-swiper='{"spaceBetween":32,"loop":false,"loopedSlides":6,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/1.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/1.png" data-lightbox="image-1"
+                                data-title="Knee Joint Instrument Box" data-alt="Knee Joint Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image1-1.jpg" data-lightbox="image-1"
+                                hidden data-title="Knee Joint Instrument Box" data-alt="Knee Joint Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image1-2.jpg" data-lightbox="image-1"
+                                hidden data-title="Knee Joint Instrument Box" data-alt="Knee Joint Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image1-3.jpg" data-lightbox="image-1"
+                                hidden data-title="Knee Joint Instrument Box" data-alt="Knee Joint Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image1-4.jpg" data-lightbox="image-1"
+                                hidden data-title="Knee Joint Instrument Box" data-alt="Knee Joint Instrument Box"></a>
+
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Knee Joint Instrument Box</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-4">
+                              Outside Dimensions/mm:
+                              520x335x120,
+                              550x275x160,
+                              550x270x120
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/2.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/2.png" data-lightbox="image-2"
+                                data-title="Hip Joint - Bio Polar Instrument Box"
+                                data-alt="Hip Joint - Bio Polar Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Hip Joint - Bio Polar Instrument Box
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              520x335x120,
+                              550x275x160,
+                              550x270x120
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/3.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/3.png" data-lightbox="image-3"
+                                data-title="Hip Joint - Un Cemented Stamp & Cup Instrument Box"
+                                data-alt="Hip Joint - Un Cemented Stamp & Cup Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+
+                              <a href="assets/img/products/products/slideshow/image3-1.png" data-lightbox="image-3"
+                                hidden data-title="Hip Joint - Un Cemented Stamp & Cup Instrument Box"
+                                data-alt="Hip Joint - Un Cemented Stamp & Cup Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image3-2.png" data-lightbox="image-3"
+                                hidden data-title="Hip Joint - Un Cemented Stamp & Cup Instrument Box"
+                                data-alt="Hip Joint - Un Cemented Stamp & Cup Instrument Box"></a>
+
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-3 fs-8 fs-md-11 fs-xxl-7">
+                              Hip Joint - Un Cemented Stamp & Cup Instrument Box</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              500X250X130
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/5.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/5.png" data-lightbox="image-5"
+                                data-title="Spine Implant Instrument Box" data-alt="Spine Implant Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image5-1.png" data-lightbox="image-5"
+                                hidden data-title="Spine Implant Instrument Box"
+                                data-alt="Spine Implant Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image5-2.png" data-lightbox="image-5"
+                                hidden data-title="Spine Implant Instrument Box"
+                                data-alt="Spine Implant Instrument Box"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Spine Implant Instrument Box</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              380X240X100
+                            <pre></pre>
+                            <hr style="color: black;">
+                            Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/8.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/8.png" data-lightbox="image-8"
+                                data-title="Spine Instrument Box" data-alt="Spine Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image8-1.png" data-lightbox="image-8"
+                                hidden data-title="Spine Instrument Box" data-alt="Spine Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image8-2.png" data-lightbox="image-8"
+                                hidden data-title="Spine Instrument Box" data-alt="Spine Instrument Box"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Spine Instrument Box
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              415x275x175,
+                              530X310X120
+                            <pre>            </pre>
+                            <hr style="color: black;">
+                            Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/10.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/10.png" data-lightbox="image-10"
+                                data-title="Plif & Tilf Instrument Box" data-alt="Plif & Tilf Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image10-1.jpg" data-lightbox="image-10"
+                                hidden data-title="Plif & Tilf Instrument Box"
+                                data-alt="Plif & Tilf Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image10-2.jpg" data-lightbox="image-10"
+                                hidden data-title="Plif & Tilf Instrument Box"
+                                data-alt="Plif & Tilf Instrument Box"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Plif & Tilf Instrument Box
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              420X270X130
+                            <pre>            </pre>
+                            <hr style="color: black;">
+                            Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-1"><span
+                          class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-1"><span
+                          class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6 mb-lg-7 " id="slider-3">
+
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider"
+                      data-swiper='{"spaceBetween":32,"loop":false,"loopedSlides":4,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/7.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/7.png" data-lightbox="image-7"
+                                data-title="Misso Robotic Instrument Box" data-alt="Misso Robotic Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image7-1.jpg" data-lightbox="image-7"
+                                hidden data-title="Misso Robotic Instrument Box"
+                                data-alt="Misso Robotic Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image7-2.jpg" data-lightbox="image-7"
+                                hidden data-title="Misso Robotic Instrument Box"
+                                data-alt="Misso Robotic Instrument Box"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Misso Robotic Instrument Box</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              596X296X175,
+                              706X256X78,
+                              596X296X175
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/11.png') ; background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/11.png" data-lightbox="image-11"
+                                data-title="Tibia Femur Instrument Box" data-alt="Tibia Femur Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Tibia Femur Instrument Box </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              550x260x130
+                            <pre></pre>
+                            <hr style="color: black;">
+                            Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/9.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/9.png" data-lightbox="image-9"
+                                data-title="PFN Instrument Box" data-alt="PFN Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              PFN Instrument Box
+                              <pre>
+                            </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              500x260x140
+                            <pre></pre>
+                            <hr style="color: black;">
+                            Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/12.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/12.png" data-lightbox="image-12"
+                                data-title="PFN2A Instrument Box" data-alt="PFN2A Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image12-1.jpg" data-lightbox="image-12"
+                                hidden data-title="PFN2A Instrument Box" data-alt="PFN2A Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image12-2.jpg" data-lightbox="image-12"
+                                hidden data-title="PFN2A Instrument Box" data-alt="PFN2A Instrument Box"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              PFN2A Instrument Box
+                              <pre>
+
+                            </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              500x250x130
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-3"><span
+                          class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-3"><span
+                          class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6 mb-lg-7 " id="slider-4">
+                <!-- <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7"> <span
+                  class="fw-bold">New </span>Arrivals</h1> -->
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider"
+                      data-swiper='{"spaceBetween":32,"loop":false,"loopedSlides":6,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/13.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/13.png" data-lightbox="image-13"
+                                data-title="Trauma - Expert Tibia Instrument Box"
+                                data-alt="Trauma - Expert Tibia Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Trauma - Expert Tibia Instrument Box
+                              <pre>   </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-4">
+                              Outside Dimensions/mm:
+                              550x260x130
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/14.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/14.png" data-lightbox="image-14"
+                                data-title="Trauma - Small Fragment 3.5mm Instrument Box"
+                                data-alt="Trauma - Small Fragment 3.5mm Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Trauma - Small Fragment 3.5mm Instrument Box
+                              <pre>  </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              540x250x140
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/15.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/15.png" data-lightbox="image-15"
+                                data-title="Trauma - Large Fragment 4.5mm Instrument Box"
+                                data-alt="Trauma - Large Fragment 4.5mm Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Trauma - Large Fragment 4.5mm Instrument Box
+                              <pre>  </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              540x250x140
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/16.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/16.png" data-lightbox="image-16"
+                                data-title="Trauma - LCP 4.0mm Screw Box" data-alt="Trauma - LCP 4.0mm Screw Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Trauma - LCP 4.0mm Screw Box
+                              <pre>   </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              240X200X100
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/17.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/17.png" data-lightbox="image-17"
+                                data-title="Trauma - LCP 3.5mm Screw Box" data-alt="Trauma - LCP 3.5mm Screw Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Trauma - LCP 3.5mm Screw Box
+                              <pre>  </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              200X145X100
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/18.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/18.png" data-lightbox="image-18"
+                                data-title="Nail Implant Instrument Box" data-alt="Nail Implant Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image18-1.jpg" data-lightbox="image-18"
+                                hidden data-title="Nail Implant Instrument Box"
+                                data-alt="Nail Implant Instrument Box"></a>
+                              <a href="assets/img/products/products/slideshow/image18-2.jpg" data-lightbox="image-18"
+                                hidden data-title="Nail Implant Instrument Box"
+                                data-alt="Nail Implant Instrument Box"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Nail Implant Instrument Box
+                              <pre>   </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              500x270x130
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-4"><span
+                          class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-4"><span
+                          class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mb-6 mb-lg-7 " id="slider-5">
+                <!-- <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7"> <span
+                  class="fw-bold">New </span>Arrivals</h1> -->
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider"
+                      data-swiper='{"spaceBetween":32,"loop":false,"loopedSlides":5,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/19.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/19.png" data-lightbox="image-19"
+                                data-title="LCP 5.0mm Screw Box" data-alt="LCP 5.0mm Screw Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              LCP 5.0mm Screw Box
+                              <pre>   </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-4">
+                              Outside Dimensions/mm:
+                              270X200X100
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/20.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/20.png" data-lightbox="image-20"
+                                data-title="LCP 6.5mm Screw Box" data-alt="LCP 6.5mm Screw Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              LCP 6.5mm Screw Box
+                              <pre>  </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              275X232X120
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/21.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/21.png" data-lightbox="image-21"
+                                data-title="Sterilize Basket" data-alt="Sterilize Basket"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Sterilize Basket
+                              <pre>  </pre>
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              520X300X80
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/22.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/22.png" data-lightbox="image-22"
+                                data-title="Endoscopy Instrument Box" data-alt="Endoscopy Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Endoscopy Instrument Box</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              500x270x130
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/23.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/23.png" data-lightbox="image-23"
+                                data-title="Arthoscopy Instrument Box" data-alt="Arthoscopy Instrument Box"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-2 fs-8 fs-md-11 fs-xxl-7">
+                              Arthoscopy Instrument Box
+                            </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">
+                              Outside Dimensions/mm:
+                              500x270x130
+                              <hr style="color: black;">
+                              Colour: Silver, Blue, Green, Black
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-5"><span
+                          class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-5"><span
+                          class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mb-6 mb-lg-7 " id="slider-6">
+                <!-- <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7"> <span
+                  class="fw-bold">New </span>Arrivals</h1> -->
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider"
+                      data-swiper='{"spaceBetween":32,"loop":false,"loopedSlides":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/24.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/24.png" data-lightbox="image-24"
+                                data-title="Silicone Mats" data-alt="Silicone Mats"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image24-1.jpg" data-lightbox="image-24"
+                                hidden data-title="Silicone Mats" data-alt="Silicone Mats"></a>
+                              <a href="assets/img/products/products/slideshow/image24-2.jpg" data-lightbox="image-24"
+                                hidden data-title="Silicone Mats" data-alt="Silicone Mats"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">
+                              Silicone Mats </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-2">
+                              Outside Dimensions/mm:
+                              330X240
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/25.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/25.png" data-lightbox="image-25"
+                                data-title="Silicone Handle" data-alt="Silicone Handle"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image25-1.png" data-lightbox="image-25"
+                                hidden data-title="Silicone Handle" data-alt="Silicone Handle"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">
+                              Silicone Handle </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-2">
+                            <pre>   </pre>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top"
+                            style="background-image: url('assets/img/products/products/26.png'); background-size: unset; background-repeat: unset;">
+                            <div class="add-section"><a
+                                class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="#!"><span
+                                  class="uil uil-phone me-1 align-middle"></span>Enquire </a>
+                              <a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center text-success fw-bold"
+                                href="assets/img/products/products/26.png" data-lightbox="image-26"
+                                data-title="Silicone Handle Type-II" data-alt="Silicone Handle Type-II"><span
+                                  class="uil uil-capture me-1 align-middle"></span>View</a>
+                              <a href="assets/img/products/products/slideshow/image26-1.jpg" data-lightbox="image-26"
+                                hidden data-title="Silicone Handle Type-II" data-alt="Silicone Handle Type-II"></a>
+                              <a href="assets/img/products/products/slideshow/image26-2.jpg" data-lightbox="image-26"
+                                hidden data-title="Silicone Handle Type-II" data-alt="Silicone Handle Type-II"></a>
+                              <a href="assets/img/products/products/slideshow/image26-3.jpg" data-lightbox="image-26"
+                                hidden data-title="Silicone Handle Type-II" data-alt="Silicone Handle Type-II"></a>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">
+                              Silicone Handle Type-II </h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-2">
+                              Outside Dimensions/mm:
+                              440X45X10
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- <div class="slider-nav">
+                    <button class="btn prev-button" data-slider="slider-5"><span
+                        class="uil uil-angle-left-b"></span></button>
+                    <button class="btn next-button" data-slider="slider-5"><span
+                        class="uil uil-angle-right-b"></span></button>
+                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <button class="btn scroll-to-top" data-scroll-top="data-scroll-top"><span
+            class="uil uil-angle-up text-white"></span></button>
+        <footer class="Footer" style="background-image: url('assets/img/illustrations/BOTTOM.png')">
+          <div class="pb-x1 px-3 px-lg-0">
+            <div class="container">
+              <div class="row align-items-end g-4 g-sm-6">
+                <div class="col-6 col-md-4">
+                  <div class="mb-6 mb-md-8"><a class="cursor-pointer" href=""><img class="img-fluid"
+                        src="assets/img/logos/Footer_logo.png" alt="" /></a></div>
+                  <div>
+                    <div class="mb-2"> <a class="links" href="#">Home</a></div>
+                    <div class="mb-2"> <a class="links" href="#about">AboutUs</a></div>
+                    <div class="mb-2"> <a class="links" href="#products">Catalog</a></div>
+                    <div class="mb-2"> <a class="links" href="#review">
+                        Review
+                      </a></div><a class="links" href="#support">
+                      ContactUs
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="mb-3 mb-md-5">
+                    <h3 class="fs-9 fs-md-8 fw-bold mb-0" style="color: #FFF0D3;">User Account</h3>
+                  </div>
+                  <div>
+                    <div class="mb-2"> <a class="links" href="#!">sign up</a></div>
+                    <div class="mb-2"> <a class="links" href="#!">log in </a></div>
+                    <div class="mb-2"> <a class="links" href="#!">edit profile</a></div>
+                    <div class="mb-2"> <a class="links" href="#!">
+                        history
+                      </a></div><a class="links" href="#!">
+                      refund
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="row g-4 g-sm-6 g-md-0">
+                    <!-- <div class="col-6 col-md-12 mb-md-7">
+                      <h3 class="fs-9 fs-md-8 fw-bold mb-3" style="color: #FFF0D3;">Follow Us At</h3>
+                      <div class="d-flex align-items-center"> <a class="social-icon me-2" href="#!"><span
+                            class="uil uil-facebook fs-8"></span></a><a class="social-icon me-2" href="#!"><span
+                            class="uil uil-linkedin fs-8"></span></a><a class="social-icon me-2" href="#!"><span
+                            class="uil uil-youtube fs-8"></span></a><a class="social-icon" href="#!"><span
+                            class="uil uil-twitter fs-8"></span></a></div>
+                    </div> -->
+                    <div class="col-6 col-md-12">
+                      <div class="mb-3">
+                        <p class="fs-9 fs-md-8 fw-bold lh-nomal mb-0" style="color: #FFF0D3;"> Contact </p>
+                      </div>
+                      <div class="fs-10 fs-md-9">
+                        <p class="mb-0 text-white opacity-70"> Obito Uchiha</p>
+                        <p class="mb-0 text-white opacity-70"> Konoha, Leaf Village</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-success py-2 py-md-3 position-relative terms-condition">
+            <div class="overley-background"></div>
+            <div class="container py-12 text-div text-md-end"><a class="links ms-md-4" href="#!" title="F.A.Q"> F.A.Q
+              </a><a class="links ms-3 ms-md-4" href="#!" title="Cookies Policy"> Cookies Policy</a><a
+                class="links ms-3 ms-md-4" href="#!" title="Legal Terms"> Legal Terms </a><a class="links ms-3 ms-md-4"
+                href="#!" title="Privacy Policy"> Privacy Policy</a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="vendors/popper/popper.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/is/is.min.js"></script>
+  <script src="vendors/countup/countUp.umd.js"></script>
+  <script src="vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="vendors/lodash/lodash.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="vendors/list.js/list.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/lightbox/lightbox-plus-jquery.js"></script>
+  <script>
+    lightbox.option({
+      'alwaysShowNavOnTouchDevices': true,
+      'disableScrolling': true
+    })
+  </script>
+
+</body>
+
+</html>
