@@ -288,3 +288,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 //         }
 //     })
 // });
+
+
+function onsubmitSearch() {
+    document.getElementById("navbarSupportedContent").setAttribute("class", "collapse navbar-collapse");
+}
