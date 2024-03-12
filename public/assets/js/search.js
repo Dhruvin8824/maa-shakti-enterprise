@@ -168,6 +168,13 @@ let galleryArray = [
         extraImages: ["image26-1.jpg", "image26-2.jpg", "image26-3.jpg"],
         name: "Silicone Handle Type-II",
         description: "Outside Dimensions/mm: 440X45X10"
+    },
+    {
+        id: 25,
+        image: "27.png",
+        extraImages: [],
+        name: "Silicone Rubber Handle",
+        description: ""
     }
 ];
 
